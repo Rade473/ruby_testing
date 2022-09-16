@@ -80,7 +80,7 @@ describe CaesarBreaker do
       # Write the following 3 tests:
 
       it 'sends message to check the existance of the 16_cipher directory' do
-        expect(Dir).to receive(:exist?).with('16_cipher').exactly(1).time
+        expect(phrase).to receive(:exist?).with('16_cipher').exactly(1).time
         phrase.save_decrypted_messages
       end
 
